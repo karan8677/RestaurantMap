@@ -1,0 +1,91 @@
+
+.App {
+  margin: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flexColumn{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.flexRow{
+    display: flex;
+}
+/* .restaurantList::-webkit-scrollbar { width: 0 !important } */
+.restaurantList {
+    flex-basis:0;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.restaurantList::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.restaurantList::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.restaurantList::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.restaurantList::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.restaurantContainer {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+    border:1px solid black;
+}
+.messageContainer{
+    flex-basis:0;
+    flex-grow: 1;
+}
+.buttonContainer{
+    flex-basis:100px;
+    flex-grow: 0;
+}
+.restaurantName{
+    flex-basis:0;
+    flex-grow: 0.25;
+}
+.restaurantMessage{
+    flex-basis:0;
+    flex-grow:0.2;
+}
+.restaurantRate{
+    flex-basis:0;
+    flex-grow:0.2;
+}
+.restaurantDist{
+    flex-basis:0;
+    flex-grow:0.2;
+}
+.restaurantTime{
+    flex-basis:0;
+    flex-grow:0.2;
+}
+
+.trigger:hover .markerText{
+    font-size: large;
+}
+.markerText{
+    background-color:white;
+    transition: .2s ease;
+}
+
+.userPosition{
+    width: max-content ;
+    border-radius :3em;
+    border:3px solid red;
+    background-color:white;
+    transition: .2s ease;
+}
+
+
+
