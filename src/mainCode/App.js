@@ -2,8 +2,9 @@ import React, { useState, Component } from "react";
 import ReactDOM from "react-dom";
 import { hot } from "react-hot-loader";
 import GoogleMapReact from 'google-map-react';
+import Googlekey from '../key.js';
 import { debounce } from 'lodash'
-import "./App.css";
+import "../css/App.css";
 var infowindow;
 var selfMarker;
 var directionsDisplay;
@@ -422,7 +423,7 @@ class RestaurantMap extends Component {
             <div style={{height:'95vh', width:'100%'}}>
                 <GoogleMapReact
                     bootstrapURLKeys={{
-                        key: 'AIzaSyBtC09sTlkWfAr4InVsEgpdGrli5PvhG8w',
+                        key: Googlekey,
                         libraries: ['places']}}
                     center={this.state.userPosition}
                     zoom={this.state.zoom}
